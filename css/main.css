@@ -1,0 +1,78 @@
+@import "http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,900";
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  line-height: 1.7em;
+  font-weight: 300;
+  color: #463934;
+  background: #fbf9f9;
+  /*
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+    font-size: $font-size * 1.5;
+  }
+  */ }
+
+p {
+  margin: 0;
+  padding: 0 0 1em; }
+
+strong {
+  font-weight: 600; }
+
+h1, h2 {
+  font-weight: 900;
+  /*color: darken($red, 25%);*/ }
+
+h1 {
+  line-height: 1em;
+  font-size: 5em;
+  margin: 0; }
+  h1 .dot {
+    font-size: .5em; }
+
+h2 {
+  margin-top: 0;
+  line-height: 1.2em; }
+
+a {
+  text-decoration: none;
+  border-bottom: 3px solid #be9789;
+  padding-bottom: 1px;
+  color: #29211e; }
+  a:hover {
+    border-bottom-color: #ac7a68; }
+
+.container {
+  max-width: 650px;
+  min-width: 500px;
+  margin: 150px; }
+  @media (max-width: 800px) {
+    .container {
+      width: 500px;
+      margin: 150px auto 0; } }
+  @media (max-width: 600px) {
+    .container {
+      width: auto;
+      min-width: 0px;
+      padding: 0 50px; } }
+
+.me {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  /*
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+    $size: 250px;
+
+    width: $size;
+    height: $size;
+  }
+  */ }
+
+p.meta {
+  font-size: .9em;
+  margin-top: 2em; }
+
+/*# sourceMappingURL=main.css.map */

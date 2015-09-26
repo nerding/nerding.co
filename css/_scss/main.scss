@@ -1,0 +1,131 @@
+// colors
+$white:         hsl( 16, 23%, 98%);
+
+$pink:          hsl(354, 42%, 56%);
+$orange:        hsl( 14, 51%, 63%);
+$yellow:        hsl( 40, 71%, 73%);
+$green:         hsl( 92, 28%, 75%);
+$cyan:          hsl(178, 17%, 65%);
+$blue:          hsl(210, 19%, 63%);
+$red:           hsl( 16, 29%, 54%);
+
+$text:          hsl( 16, 15%, 24%);
+$links:         darken($text, 10%);
+
+$main: lighten($red, 10%);
+$darker: darken($main, 10%);
+
+// sizes
+$padding: 1em;
+
+// fonts
+$font-body:  "Source Code Pro", monospace;
+$font-size:   18px;
+
+$line-height:  1.7em;
+
+// fonts imports
+@import "http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,900";
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: $font-body;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 300;
+
+  color: $text;
+  background: $white;
+
+  /*
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+    font-size: $font-size * 1.5;
+  }
+  */
+}
+
+p {
+  margin: 0;
+  padding: 0 0 1em;
+}
+
+strong {
+  font-weight: 600;
+}
+
+h1, h2 {
+  font-weight: 900;
+  /*color: darken($red, 25%);*/
+}
+
+h1 {
+  line-height: 1em;
+  font-size: 5em;
+  margin: 0;
+
+  .dot {
+    font-size: .5em;
+  }
+}
+
+h2 {
+  margin-top: 0;
+  line-height: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 3px solid $main;
+  padding-bottom: 1px;
+  //font-weight: 400;
+
+  color: $links;
+
+  &:hover {
+    border-bottom-color: $darker;
+  }
+}
+
+.container {
+  $margin: 150px;
+
+  max-width: 650px;
+  min-width: 500px;
+  margin: $margin;
+
+  @media (max-width: 800px) {
+    width: 500px;
+    margin: $margin auto 0; 
+  }
+
+  @media (max-width: 600px) {
+    width: auto;
+    min-width: 0px;
+    padding: 0 50px;
+  }
+}
+
+.me {
+  $size: 125px;
+
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+
+  /*
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+    $size: 250px;
+
+    width: $size;
+    height: $size;
+  }
+  */
+}
+
+p.meta {
+  font-size: .9em;
+  margin-top: 2em;
+  //margin-bottom: -1em;
+}
